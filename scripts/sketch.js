@@ -6,7 +6,7 @@ var gallery;
 function preload() {
   //preload map
   //source: https://commons.wikimedia.org/wiki/File:Equirectangular-projection-topographic-world.jpg
-  mapimg = loadImage('scripts/chart-templates/worldmap.jpg');
+  mapimg = loadImage('https://uploads-ssl.webflow.com/5d6e55ca1416617737eabacd/60be3976de00dcadda1fea81_worldmap.jpg');
 }
 
 function setup() {
