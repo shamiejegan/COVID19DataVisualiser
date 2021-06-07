@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Data Visualiser: CM1010 Final Assignment</title>
+
+    <link rel="stylesheet" href="stylesheet/style.css">
+
+    <!-- Libraries -->
+    <script src="lib/p5.min.js"></script>
+
+    <!-- Main sketch file -->
+    <script src="scripts/sketch.js"></script>
+
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/helpers/save-visual.js"></script>
+
+    <!-- Add helpers below -->
+    <script src="scripts/helpers/add-title.js"></script>
+    <script src="scripts/helpers/string-to-numbers.js"></script>
+    <script src="scripts/helpers/number-to-commas.js"></script>
+
+    <script src="scripts/helpers/check-mouse-hover.js"></script>
+    <script src="scripts/helpers/draw-linepoints.js"></script>
+
+    <script src="scripts/helpers/sum.js"></script>
+    <script src="scripts/helpers/toggle-grid.js"></script>
+    <script src="scripts/helpers/draw-axis.js"></script>
+    <script src="scripts/helpers/draw-box-axis.js"></script>
+    <script src="scripts/helpers/draw-axislabels.js"></script>
+    <script src="scripts/helpers/draw-xaxis-ticklabels.js"></script>
+    <script src="scripts/helpers/draw-yaxis-ticklabels.js"></script>
+
+    <!-- chart template files -->
+    <script src="scripts/chart-templates/donut-chart.js"></script>
+    <script src="scripts/chart-templates/stackedbar-chart.js"></script>
+    <script src="scripts/chart-templates/map-bubble-chart.js"></script>
+    <script src="scripts/chart-templates/multiclass-timeseries-chart.js"></script>
+    <script src="scripts/chart-templates/bubble-chart.js"></script>
+    <script src="scripts/chart-templates/timeseries-chart.js"></script>
+
+    <!-- Visualisation files -->
+    <script src="scripts/visualisations/tech-diversity-race.js"></script>
+    <script src="scripts/visualisations/tech-diversity-gender.js"></script>
+    <script src="scripts/visualisations/covid19-cases-geography.js"></script>
+    <script src="scripts/visualisations/covid19-cases-weekly.js"></script>
+    <script src="scripts/visualisations/pay-gap-by-job-2017.js"></script>
+    <script src="scripts/visualisations/pay-gap-time-series.js"></script>
+    <script src="scripts/visualisations/climate-change.js"></script>
+
+  </head>
+
+  <body>
+    <div id="app" class="container">
+      <div id="side-bar">
+        <p>Select Visualization</p>
+        <ul id="visuals-menu"></ul>
+        <!-- A div is created to contain both the user guide and image download buttons -->
+        <div id="buttons-area">
+          <!-- add a button that links to the user guide -->
+          <button onclick="location.href='documentation/user-guide.html'" type="button">User Guide</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

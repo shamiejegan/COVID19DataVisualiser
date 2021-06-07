@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>User Guide</title>
+
+  </head>
+
+
+  <body>
+
+    <h1>USER GUIDE</h1>
+
+    <a href="/">Back to application</a>
+
+    <p>There are a total of 7 visualizations within this project.
+      The first 2 visuals are new visuals based on a COVID19 dataset.
+      The other 5 visuals are enhancements to the template provided in the course.
+      The canvas area will be greyed out before any visual is selected.
+      To start viewing any visual, click on the title of the visual you would like to explore on the side bar (left).
+      Once the visual is selected, you may interact and modify how you would like the visual to look.
+      Once satisfied, you can download the file as a JPEG file using the “Save As Image” button.
+    </p>
+
+    <h2>COVID19 Cases in 2020: Geographic View</h2>
+    <p>Overview:</p>
+    <ul>
+      <li>This visual provides a snapshot on how the number of COVID19 cases are distributed globally.</li>
+      <li>The bubbles are located over each country based on its longitudinal and latitudinal coordinates.</li>
+      <li>The size of the bubbles represents the number of COVID19 cases recorded for that country in 2020.</li>
+    </ul>
+    <p>User interactions:</p>
+    <ul>
+      <li>There is a slider for you to filter the number of countries you want displayed.
+        It’s default value is at 5.
+        You may decrease the number of countries you want displayed on the screen up to zero,
+        and increase the number of countries up till the count of countries available in the dataset (158).
+        The title of the chart changes along with this.
+      </li>
+    </ul>
+
+    <h2>COVID19 Cases in 2020: Weekly View</h2>
+    <p>Overview:</p>
+    <ul>
+      <li>This visual provides a weekly timeseries of the number of new cases reported by each country in 2020.</li>
+      <li>Each line represents 1 country, colour coded randomly to be differentiated from one another.</li>
+      <li>It only displays countries with at least 1 week where it had at least 10,000 new cases reported.</li>
+      <li>Each time the visualisation is loaded, the display is animated, with data coming in from week 1 up to the end of the year.</li>
+      <li>The Y axis will always have a rounded value for visual appeal.</li>
+    </ul>
+    <p>User interactions:</p>
+    <ul>
+      <li>You may turn on/off the visibility of grid lines for the chart.</li>
+      <li>Hover over the data points to get a more granular view of the number of new cases reported for the particular country on a specific week.</li>
+    </ul>
+
+    <h2>Tech Diversity: Race distribution by company</h2>
+    <p>Overview:</p>
+    <ul>
+      <li>This visual presents the proportion of employees belonging to each race for each company through a pie chart.</li>
+    </ul>
+    <p>User interaction:</p>
+    <ul>
+      <li>Select from a list of companies through the drop down list.
+        The chart and title gets updated according to the selected company.
+      </li>
+      <li>Modify the display of the pie chart by increasing the plot size or inserting a hole within the pie to convert it into a donut chart using the sliders.</li>
+    </ul>
+
+    <h2>Tech Diversity: Gender composition by company</h2>
+    <p>Overview:</p>
+    <ul>
+      <li>This visual presents the distribution of gender within each company through a horizontally 100% stacked bar chart.</li>
+      <li>The reference line in the middle of the chart represents the ideal situation of a 50-50 split of genders.</li>
+    </ul>
+    <p>User interactions:</p>
+    <ul>
+      <li>Shift the reference line using the slider.</li>
+      <li>Change the colour that represents each gender using the colour picker.</li>
+    </ul>
+
+    <h2>Pay gap: Gender inequality by Job Type</h2>
+    <p>Overview:</p>
+    <ul>
+      <li>This visual presents the degree of pay gap between males and females according to the job they are in.</li>
+      <li>The blue bubbles represent male-dominated jobs, while the red bubbles represent female-dominated jobs.</li>
+      <li>The y-axis represents the degree of pay gap.
+        Bubbles in the top section are jobs that pay males better, while bubbles in the bottom section are jobs that pay females better.
+      </li>
+    </ul>
+    <p>User interaction:</p>
+    <ul>
+      <li>Hover of over each bubble to display the respective labelling text on the job, gender proportions, and pay gap.</li>
+      <li>Use the drop down to filter to a specific job type.</li>
+      <li>To view all the job types available again, select the “All” option in the dropdown.</li>
+    </ul>
+
+    <h2>Pay gap: Over the years</h2>
+    <p>Overview:</p>
+    <ul>
+      <li>This visual presents how the pay gap between males and females have changed over the years.</li>
+      <li>Each time the visualisation is loaded, the display is animated, with data coming in from 1997 up to 2017.</li>
+    </ul>
+    <p>User interaction:</p>
+    <ul>
+      <li>You may turn on/off the visibility of grid lines for the chart.</li>
+      <li>Filter the start / end date with the slider to change the starting and ending points of the x axis respectively.</li>
+    </ul>
+
+    <h2>Climate Change</h2>
+    <p>Overview:</p>
+    <ul>
+      <li>This visual presents the change in global average temperature over the past 30 years.</li>
+      <li>Cooler climates are represented with a blue-er shade while warmer climates are represented with a red-er shade.</li>
+      <li>Each time the visualisation is loaded, the display is animated, with data coming in from 1880 up to 2018.</li>
+    </ul>
+    <p>User interaction:</p>
+    <ul>
+      <li>You may turn on/off the visibility of grid lines for the chart.</li>
+      <li>Filter the start / end date with the slider to change the starting and ending points of the x axis respectively.</li>
+    </ul>
+
+    <a href="/">Back to application</a>
+  </body>
+</html>
