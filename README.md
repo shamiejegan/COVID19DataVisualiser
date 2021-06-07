@@ -2,7 +2,6 @@
 
 Semester: October 2020
 Coursework: CM1010 Final Assignment
-Candidate Number: WP0838
 
 ## EXTENSIONS CREATED
 
