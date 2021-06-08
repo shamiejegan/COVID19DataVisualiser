@@ -18,7 +18,7 @@ function Covid19CasesWeekly() {
   this.preload = function() {
     var self = this;
     this.data = loadTable(
-      './data/covid19/Covid19-overallcases-weekly.csv', 'csv', 'header',
+      'https://gitcdn.link/repo/shamiejegan/UOL-CM1010/main/data/covid19/Covid19-overallcases-weekly.csv', 'csv', 'header',
       // Callback function to set the value this.loaded to true.
       function(table) {
         self.loaded = true;

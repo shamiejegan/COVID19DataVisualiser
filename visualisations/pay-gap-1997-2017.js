@@ -54,7 +54,7 @@ function PayGapTimeSeries() {
   this.preload = function() {
     var self = this;
     this.data = loadTable(
-      './data/pay-gap/all-employees-hourly-pay-by-gender-1997-2017.csv', 'csv', 'header',
+      'https://gitcdn.link/repo/shamiejegan/UOL-CM1010/main/data/pay-gap/all-employees-hourly-pay-by-gender-1997-2017.csv', 'csv', 'header',
       // Callback function to set the value
       // this.loaded to true.
       function(table) {
