@@ -1,7 +1,7 @@
 function Covid19CasesGeography() {
 
   // Name for the visualisation to appear in the menu bar.
-  this.name = 'COVID19: Geographic View';
+  this.name = 'Geographic View of Cases';
 
   // Each visualisation must have a unique ID with no special characters.
   this.id = 'covid19-cases-geographic';

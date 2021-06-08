@@ -8,7 +8,7 @@ body{
   margin:0px;
   padding: 0px;
   font-size: 80%;
-  display: flex;
+  display: inline-flex;
 }
 
 #side-bar{

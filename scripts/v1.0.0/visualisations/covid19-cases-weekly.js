@@ -1,7 +1,7 @@
 function Covid19CasesWeekly() {
 
   // Name for the visualisation to appear in the menu bar.
-  this.name = 'COVID19: Weekly View';
+  this.name = 'Weekly Cases Volumes by Countries';
 
   // Each visualisation must have a unique ID with no special characters.
   this.id = 'covid19-cases-weekly';
