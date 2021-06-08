@@ -1,7 +1,7 @@
 function TravelSearchTerm() {
 
   // Name for the visualisation to appear in the menu bar.
-  this.name = 'Travel Search Term';
+  this.name = 'Change in search volumes for travel';
 
   // Each visualisation must have a unique ID with no special characters.
   this.id = 'travel-search-term';
@@ -107,9 +107,9 @@ function TravelSearchTerm() {
     volume=stringsToNumbers(volume);
 
     // dynamically modify title based on filtering
-    var title = "Weekly Travel Search Volumes (2020)"
+    var title = "3-year Weekly View of Travel Search Volumes (2018-2020)"
 
-    var xAxisLabel = 'Week, 2020';
+    var xAxisLabel = 'Weeks relative to start of COVID (31 Dec 2019)';
     var yAxisLabel = 'Relative Travel Search Volume, Google Trends (%)';
 
     // set the gridOn value to true/false based on the current button value

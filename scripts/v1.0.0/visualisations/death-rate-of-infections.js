@@ -1,10 +1,10 @@
-function TechDiversityRace() {
+function DeathRateOfInfection() {
 
   // Name for the visualisation to appear in the menu bar.
-  this.name = 'Tech Diversity: Race distribution by company';
+  this.name = 'Death Rate of Infection';
 
   // Each visualisation must have a unique ID with no special characters.
-  this.id = 'tech-diversity-race';
+  this.id = 'death-rate-of-infections';
 
   // Property to represent whether data has been loaded.
   this.loaded = false;
@@ -14,7 +14,7 @@ function TechDiversityRace() {
   this.preload = function() {
     var self = this;
     this.data = loadTable(
-      'https://gitcdn.link/repo/shamiejegan/UOL-CM1010/main/data/tech-diversity/race-2018.csv', 'csv', 'header',
+      'https://gitcdn.link/repo/shamiejegan/UOL-CM1010/main/data/covid19/percentage-death-cases-2020.csv', 'csv', 'header',
       // Callback function to set the value this.loaded to true.
       function(table) {
         self.loaded = true;
@@ -59,15 +59,6 @@ function TechDiversityRace() {
 
     // create a div block to hold the slider, as a child of visual-options
     // check if element already exists. If so, remove the element
-    if (document.contains(document.getElementById("size-slider"))) {
-      document.getElementById("size-slider").remove();
-    }
-    this.SizeSliderDiv=createDiv("Plot Size: ").id("size-slider");
-    this.SizeSliderDiv.style('padding','10px');
-    this.SizeSliderDiv.style('font-weight','normal');
-    this.SizeSliderDiv.parent('visual-options');
-    this.SizeSlider = createSlider(0.25,0.45,0.35,0.01);
-    this.SizeSlider.parent('size-slider');
 
     // Create a select DOM element option to toggle between donut and pie chart mode.
     if (document.contains(document.getElementById("donut-size"))) {
@@ -86,7 +77,6 @@ function TechDiversityRace() {
 
   this.destroy = function() {
       this.selectdiv.remove();
-      this.SizeSliderDiv.remove();
       this.DonutButtonDiv.remove();
   };
 
@@ -100,7 +90,7 @@ function TechDiversityRace() {
     }
 
     //customise input parameters to chart constructor
-    var plotsize=this.SizeSlider.value()
+    var plotsize=0.4
     var holesize=this.DonutButton.value()
     var x=100;
     var y=height / 2;
@@ -108,12 +98,12 @@ function TechDiversityRace() {
 
     // Get the value of the company we're interested in from the
     // select item.
-    var companyName = this.select.value();
-    this.donutchart = new DonutChart(x, y, diameter,holesize,companyName);
+    var country = this.select.value();
+    this.donutchart = new DonutChart(x, y, diameter,holesize,country);
 
 
     // Get the column of raw data for the respective company that is selected.
-    var col = this.data.getColumn(companyName);
+    var col = this.data.getColumn(country);
 
     // Convert all data strings to numbers.
     col = stringsToNumbers(col);
@@ -122,10 +112,10 @@ function TechDiversityRace() {
     var labels = this.data.getColumn(0);
 
     // Colour to use for each category.
-    var colours = ['blue', 'red', 'green', 'pink', 'purple', 'yellow'];
+    var colours = ['blue', 'red'];
 
     // Make a title.
-    var title = 'Employee diversity at ' + companyName;
+    var title = 'Infection death rate in ' + country;
 
     // Draw the pie chart!
     this.donutchart.draw(col, labels, colours, title);

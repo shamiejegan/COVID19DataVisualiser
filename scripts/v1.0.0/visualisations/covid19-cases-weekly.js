@@ -1,7 +1,7 @@
 function Covid19CasesWeekly() {
 
   // Name for the visualisation to appear in the menu bar.
-  this.name = 'Weekly Cases Volumes by Countries';
+  this.name = 'Growth in Case Count';
 
   // Each visualisation must have a unique ID with no special characters.
   this.id = 'covid19-cases-weekly';
@@ -77,7 +77,7 @@ function Covid19CasesWeekly() {
     var title=" Weekly New COVID19 Cases (2020)";
     var colours=this.itemcolour;
     var xAxisLabel="Week in 2020";
-    var yAxisLabel="Number of New Cases";
+    var yAxisLabel="Number of cases by country (hover)";
     var datalimit=100000; // minimum weekly cases for country to be displayed
 
     // set the gridOn value to true/false based on the current button value

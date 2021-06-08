@@ -21,10 +21,9 @@ function setup() {
   gallery.addVisual(new Covid19CasesGeography());
   gallery.addVisual(new Covid19CasesWeekly());
   gallery.addVisual(new TravelSearchTerm());
-  gallery.addVisual(new TechDiversityRace());
-  gallery.addVisual(new TechDiversityGender());
-  gallery.addVisual(new PayGapByJob2017());
-  gallery.addVisual(new ClimateChange());
+  gallery.addVisual(new DeathRateOfInfection());
+  // gallery.addVisual(new TechDiversityGender());
+  // gallery.addVisual(new PayGapByJob2017());
 }
 
 function draw() {
