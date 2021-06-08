@@ -8,6 +8,7 @@ body{
   margin:0px;
   padding: 0px;
   font-size: 80%;
+  display: flex;
 }
 
 #side-bar{
@@ -33,14 +34,10 @@ body{
     word-wrap: break-word;
 }
 
-.container {
-  display: flex;
-}
-
-.hover {
+#app .hover {
     background: lightgray
 }
 
-.selected{
+#app .selected{
     background: gold
 }
