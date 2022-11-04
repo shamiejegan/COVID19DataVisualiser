@@ -14,7 +14,7 @@ function TravelSearchTerm() {
   this.preload = function() {
     var self = this;
     this.data = loadTable(
-      'https://gitcdn.link/repo/shamiejegan/UOL-CM1010/main/data/covid19/travel-search-term.csv', 'csv', 'header',
+      'data/covid19/travel-search-term.csv', 'csv', 'header',
       // Callback function to set the value
       // this.loaded to true.
       function(table) {

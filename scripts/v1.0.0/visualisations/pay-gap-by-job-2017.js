@@ -15,7 +15,7 @@ function PayGapByJob2017() {
 
     var self = this;
     this.data = loadTable(
-      'https://gitcdn.link/repo/shamiejegan/UOL-CM1010/main/data/pay-gap/occupation-hourly-pay-by-gender-2017.csv', 'csv', 'header',
+      'data/pay-gap/occupation-hourly-pay-by-gender-2017.csv', 'csv', 'header',
       // Callback function to set the value
       // this.loaded to true.
       function(table) {
